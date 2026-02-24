@@ -1,0 +1,20 @@
+# Local Environment & Secrets
+.env
+.env.local
+credentials.json
+token.json
+
+# Temporary & Build Files
+.tmp/
+dist/
+build/
+.cache/
+.antigravity/logs/
+
+# Large Survey Assets (Optional - remove if you want to track images)
+# assets/images/projects/*.dwg
+# assets/images/projects/*.dxf
+
+# OS Specific
+.DS_Store
+Thumbs.db
