@@ -1,0 +1,64 @@
+<!-- Footer — Sitemapper Surveys -->
+<footer class="footer" id="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Brand -->
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo" style="margin-bottom: var(--space-md); display:inline-flex;">
+                    <img src="assets/images/logos/COLORmdpi.svg" alt="Sitemapper Surveys" style="height:36px;" />
+                </a>
+                <p>
+                    UK-based geomatics specialists delivering high-accuracy topographic surveys,
+                    3D laser scanning, and BIM-ready point cloud data for construction,
+                    infrastructure, and land development projects.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4>Contact</h4>
+                <ul class="footer-links footer-contact">
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <a href="mailto:info@sitemappersurveys.co.uk">info@sitemappersurveys.co.uk</a>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <span>United Kingdom</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <span>&copy; <span id="footer-year"></span> Sitemapper Surveys Ltd. All rights reserved.</span>
+            <span class="mono" style="color: var(--sms-text-dim);">Precision. Delivered.</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Set the current year dynamically
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>

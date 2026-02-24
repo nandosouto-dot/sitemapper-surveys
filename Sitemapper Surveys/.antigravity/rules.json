@@ -1,0 +1,62 @@
+
+INSTRUCTIONS:
+Build the website modularly. Create individual React components for the following sections using the exact copy provided below. Ensure the design is fully responsive (mobile-first) and accessible.
+
+CONTENT & STRUCTURE TO IMPLEMENT:
+0. NAVIGATION (<Navbar />)
+- Desktop: Horizontal menu fixed to the top.
+- Links: Services, Projects, Equipment, About, Contact.
+- Mobile: Fully responsive hamburger menu that toggles a clean, accessible dropdown or slide-out drawer.
+- Styling: Keep it sticky on scroll with a slight backdrop blur (glassmorphism) to maintain the "technical" aesthetic without distracting from the content.
+ROLE: You are the Lead Frontend Developer for "Sitemapper Surveys", a UK-based geomatic and land surveying company.
+WORKSPACE: D:\AntigravityProjects\ClaudeWorkspace\Sitemapper Surveys
+TECH STACK: Next.js (App Router), Tailwind CSS, TypeScript, Framer Motion, React-Icons.
+AESTHETIC: High-precision, professional, trustworthy. Use clean lines, subtle grid backgrounds representing topographic maps, and a color palette that inspires reliability (e.g., deep slate, high-vis accents like safety orange or laser cyan). 
+
+1. HERO SECTION (<Hero />)
+- Headline: Accurate Geomatic & Land Surveying Services Across the UK
+- Subheading: Supporting construction, civil engineering and development projects with reliable, high-precision survey data delivered on time.
+- Buttons: Primary ("Request a Quote"), Secondary ("View Our Projects").
+
+2. INTRO SECTION (<Intro />)
+- Copy: Reliable survey data is critical to every successful project. We provide precise geomatic and land surveying services for contractors, engineers, architects and developers across [Region]. From initial topographic surveys to construction setting out and final as-built verification, our work ensures your project progresses without costly errors.
+
+3. CORE SERVICES (<Services />) - Format as a responsive CSS Grid of cards
+- Topographic Surveys: Detailed terrain and feature mapping for planning, design and construction. Deliverables provided in DWG, PDF and 3D surface models where required.
+- Measured Building Surveys: Accurate internal and external building measurements, including floor plans, elevations and sections suitable for architectural design and refurbishment projects.
+- Construction Setting Out: Precise transfer of design coordinates onto site using GNSS and total station equipment. Reliable control for foundations, steelwork, drainage and infrastructure.
+- 3D Laser Scanning: High-resolution point cloud capture for complex environments, heritage structures and as-built documentation.
+- As-Built Surveys: Verification of completed works to confirm compliance with design drawings and project specifications.
+- Volume & Stockpile Calculations: Accurate volume computation for earthworks, aggregates and material management.
+
+4. WHY CHOOSE US (<WhyUs />) - Use bullet points with checkmark icons
+- Industry experience in construction and civil engineering environments.
+- Modern GNSS, robotic total station and laser scanning equipment.
+- Accurate CAD deliverables compatible with industry standards.
+- Efficient turnaround times.
+- Fully insured and compliant with UK health & safety requirements.
+- Callout text: "Surveying is not an area where shortcuts are acceptable. Accuracy and reliability are non-negotiable."
+
+5. RECENT PROJECTS (<Projects />)
+- Residential Development – [Location]: Topographic survey and construction setting out for multi-unit housing project. Deliverables provided in AutoCAD format for architectural and engineering teams.
+- Commercial Refurbishment – [Location]: Measured building survey and 3D laser scanning for structural modification and redesign.
+- Infrastructure Works – [Location]: Control survey and as-built verification for drainage and external works package.
+- Button: [View All Projects]
+
+6. EQUIPMENT & TECHNOLOGY (<Equipment />)
+- Intro: We operate professional-grade surveying equipment, including:
+- GNSS receivers for site control and large-area surveys.
+- Robotic total stations for high-precision setting out.
+- 3D laser scanning systems for complex capture.
+- Industry-standard software, including AutoCAD and Civil 3D.
+- Outro: Professional equipment, properly operated, ensures dependable results.
+
+7. CALL TO ACTION (<CTA />)
+- Copy: Planning a project that requires accurate survey data? Contact us today to discuss your requirements or request a quotation.
+- Button: Request a Quote
+- Contact Info: Phone: 07448550335 | Email: info@sitemappersurveys.co.uk
+- Feature: Implement a fixed-positioning WhatsApp widget in the bottom right corner of the screen globally.
+
+8. FOOTER (<Footer />)
+- Links: Services, Projects, Equipment, About, Contact.
+- Details: Service Area: UK | Company Name: Sitemapper Surveys | [Placeholder for Company Registration] | [Placeholder for Insurance details].
