@@ -1,0 +1,13 @@
+node_modules
+.next
+.vscode
+.idea
+*.log
+.env
+.env.local
+.DS_Store
+dist
+out
+build
+temp-next-app/node_modules
+temp-next-app/.next

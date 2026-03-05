@@ -1,0 +1,57 @@
+{
+  "projects": [
+    {
+      "id": "Sitemapper-001",
+      "title": "Topographical Survey for Residential Development",
+      "location": "UK",
+      "client_sector": "Civil Engineering, Construction, Architectural",
+      "service_category": "Geomatic, Land Surveying",
+      "date": "2026-03-15",
+      "technical_specs": {
+        "equipment": ["Leica GS18 RTK GNSS", "Leica TS15 Total Station","Leica P40 Scanner"],
+        "accuracy_horizontal": "10mm",
+        "accuracy_vertical": "15mm",
+        "coordinate_system": "British National Grid (OSGB36 / EPSG:27700)",
+        "contour_interval": "0.25m"
+      },
+      "deliverables": ["2D AutoCAD DWG", "3D Point Cloud", "PDF Site Plan"],
+      "description": "Comprehensive topographical survey.",
+      "featured_image": "/assets/projects/*.webp",
+      "tags": ["Land Survey","Built Survey","Boundary Dispute","Planimetry", "Altimetry"]
+    },
+    {
+      "id": "Sitemapper-002",
+      "title": "LiDAR Facade Scan & Measured Building Survey",
+      "location": "Central London, UK",
+      "client_sector": "Heritage & Restoration",
+      "service_category": "Laser Scanning",
+      "date": "2026-01-10",
+      "technical_specs": {
+        "equipment": ["Leica P40 Scanner"],
+        "point_cloud_density": "3mm at 10m",
+        "data_format": "LGS / RCP/.57",
+        "lod": "LOD 300"
+      },
+      "deliverables": ["3D Revit Model (BIM)", "Elevations", "Point Cloud Data"],
+      "description": "High-density 3D laser scan of a Grade II listed facade. Captured over 500 million points to produce a sub-5mm accurate BIM model for restoration planning.",
+      "featured_image": "/assets/projects/*.webp",
+      "tags": ["3D Scanning", "BIM", "Heritage"]
+    },
+    {
+      "id": "Sitemapper-003",
+      "title": "3 houses Setting Out",
+      "location": "Sevenoaks, UK",
+      "client_sector": "Civil Engineering, Construction, Architectural",
+      "service_category": "Site Engineering",
+      "date": "2026-02-28",
+      "technical_specs": {
+        "equipment": ["Leica TS15 Total Station"],
+        "accuracy": "High-Precision RTK"
+      },
+      "deliverables": ["Georeferenced GML File", "Boundary Dispute Report", "Validation Certificate"],
+      "description": "Site setting out for 3 family dwellings in the Borough of Sevenoaks",
+      "featured_image": "/assets/projects/*.webp",
+      "tags": ["staking out", "GNSS", "Setting Out"]
+    }
+  ]
+}
