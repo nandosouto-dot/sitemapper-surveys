@@ -45,9 +45,9 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                    ? 'bg-white/95 dark:bg-[#0a1628]/95 backdrop-blur-md shadow-lg shadow-black/5'
-                    : 'bg-transparent'
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${scrolled
+                ? 'bg-white/95 dark:bg-[#0a1628]/95 backdrop-blur-md shadow-lg shadow-black/5 border-[#e2e8f0] dark:border-[#1e3550]'
+                : 'bg-white/90 dark:bg-[#0a1628]/90 backdrop-blur-sm border-[#e2e8f0]/60 dark:border-[#1e3550]/60'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -86,8 +86,8 @@ export default function Navbar() {
                                     {/* Dropdown */}
                                     <div
                                         className={`absolute top-full left-0 mt-2 w-80 bg-white dark:bg-[#111d32] rounded-2xl shadow-2xl shadow-black/10 border border-[#e2e8f0] dark:border-[#1e3550] overflow-hidden transition-all duration-300 origin-top ${servicesOpen
-                                                ? 'opacity-100 scale-100 translate-y-0'
-                                                : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
+                                            ? 'opacity-100 scale-100 translate-y-0'
+                                            : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
                                             }`}
                                     >
                                         <div className="p-2">
