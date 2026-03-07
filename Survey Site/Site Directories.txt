@@ -1,0 +1,2 @@
+Directories:
+featured_image": "/assets/projects/*.webp"

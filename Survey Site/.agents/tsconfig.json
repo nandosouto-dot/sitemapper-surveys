@@ -1,0 +1,21 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "..",
+        "paths": {
+            "react": [
+                "temp-next-app/node_modules/react"
+            ],
+            "react-dom": [
+                "temp-next-app/node_modules/react-dom"
+            ],
+            "lucide-react": [
+                "temp-next-app/node_modules/lucide-react"
+            ]
+        }
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx"
+    ]
+}
