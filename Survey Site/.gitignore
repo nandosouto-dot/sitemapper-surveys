@@ -11,3 +11,4 @@ out
 build
 temp-next-app/node_modules
 temp-next-app/.next
+.claude/
