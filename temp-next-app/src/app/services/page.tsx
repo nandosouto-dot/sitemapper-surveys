@@ -74,8 +74,8 @@ function ServiceDetail({ service }: { service: typeof services[0] }) {
         <div id={service.id} className="scroll-mt-24">
             <div
                 className={`rounded-2xl border transition-all duration-500 overflow-hidden ${expanded
-                        ? 'border-[#00b4d8]/50 shadow-xl shadow-[#00b4d8]/5 bg-white dark:bg-[#111d32]'
-                        : 'border-[#e2e8f0] dark:border-[#1e3550] bg-white dark:bg-[#111d32] hover:border-[#00b4d8]/30'
+                        ? 'border-secondary/50 shadow-xl shadow-secondary/5 bg-white dark:bg-surface'
+                        : 'border-border dark:border-border bg-white dark:bg-surface hover:border-secondary/30'
                     }`}
             >
                 {/* Header */}
@@ -84,18 +84,18 @@ function ServiceDetail({ service }: { service: typeof services[0] }) {
                     className="w-full flex items-center gap-5 p-6 sm:p-8 text-left cursor-pointer group"
                 >
                     <div className={`p-4 rounded-xl transition-all duration-300 shrink-0 ${expanded
-                            ? 'bg-gradient-to-br from-[#1e3a5f] to-[#00b4d8] text-white shadow-lg shadow-[#00b4d8]/20'
-                            : 'bg-[#f0f4f8] dark:bg-[#162541] text-[#64748b] group-hover:text-[#1e3a5f] dark:group-hover:text-[#00b4d8]'
+                            ? 'bg-primary text-on-primary shadow-lg shadow-primary/20'
+                            : 'bg-surface dark:bg-surface-dark text-text-muted group-hover:text-primary dark:group-hover:text-secondary'
                         }`}>
                         <Icon className="w-6 h-6" />
                     </div>
                     <div className="flex-grow">
-                        <h3 className="text-xl font-bold text-[#0a1628] dark:text-white group-hover:text-[#1e3a5f] dark:group-hover:text-[#00b4d8] transition-colors">
+                        <h3 className="text-xl font-bold text-foreground dark:text-white group-hover:text-primary dark:group-hover:text-secondary transition-colors">
                             {service.title}
                         </h3>
-                        <p className="text-[#64748b] text-sm mt-1 line-clamp-1">{service.concept}</p>
+                        <p className="text-text-muted text-sm mt-1 line-clamp-1">{service.concept}</p>
                     </div>
-                    <div className={`text-[#94a3b8] transition-transform duration-300 shrink-0 ${expanded ? 'rotate-180' : ''}`}>
+                    <div className={`text-text-light transition-transform duration-300 shrink-0 ${expanded ? 'rotate-180' : ''}`}>
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                         </svg>
@@ -105,26 +105,26 @@ function ServiceDetail({ service }: { service: typeof services[0] }) {
                 {/* Expanded Content */}
                 <div className={`transition-all duration-500 ease-in-out ${expanded ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
                     } overflow-hidden`}>
-                    <div className="px-6 sm:px-8 pb-8 border-t border-[#e2e8f0] dark:border-[#1e3550] pt-6">
-                        <p className="text-[#334155] dark:text-[#94a3b8] leading-relaxed mb-6">{service.concept}</p>
+                    <div className="px-6 sm:px-8 pb-8 border-t border-border dark:border-border pt-6">
+                        <p className="text-foreground dark:text-text-light leading-relaxed mb-6">{service.concept}</p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div>
-                                <h4 className="text-sm font-semibold uppercase tracking-wider text-[#1e3a5f] dark:text-[#00b4d8] mb-4">Key Features</h4>
+                                <h4 className="text-sm font-semibold uppercase tracking-wider text-primary dark:text-secondary mb-4">Key Features</h4>
                                 <ul className="space-y-2">
                                     {service.features.map((f: string) => (
-                                        <li key={f} className="flex items-center gap-2 text-sm text-[#334155] dark:text-[#cbd5e1]">
-                                            <CheckCircle2 className="w-4 h-4 text-[#10b981] shrink-0" /> {f}
+                                        <li key={f} className="flex items-center gap-2 text-sm text-foreground dark:text-foreground">
+                                            <CheckCircle2 className="w-4 h-4 text-success shrink-0" /> {f}
                                         </li>
                                     ))}
                                 </ul>
                             </div>
                             <div>
-                                <h4 className="text-sm font-semibold uppercase tracking-wider text-[#1e3a5f] dark:text-[#00b4d8] mb-4">Deliverables</h4>
+                                <h4 className="text-sm font-semibold uppercase tracking-wider text-primary dark:text-secondary mb-4">Deliverables</h4>
                                 <ul className="space-y-2">
                                     {service.deliverables.map((d: string) => (
-                                        <li key={d} className="flex items-center gap-2 text-sm text-[#334155] dark:text-[#cbd5e1]">
-                                            <CheckCircle2 className="w-4 h-4 text-[#00b4d8] shrink-0" /> {d}
+                                        <li key={d} className="flex items-center gap-2 text-sm text-foreground dark:text-foreground">
+                                            <CheckCircle2 className="w-4 h-4 text-secondary shrink-0" /> {d}
                                         </li>
                                     ))}
                                 </ul>
@@ -141,12 +141,12 @@ export default function ServicesPage() {
     return (
         <div className="grid-overlay">
             {/* Hero */}
-            <section className="pt-32 pb-16 px-4 sm:px-6 max-w-5xl mx-auto text-center">
-                <span className="text-[#00b4d8] text-sm font-semibold uppercase tracking-wider">Our Services</span>
-                <h1 className="text-4xl sm:text-5xl font-extrabold text-[#0a1628] dark:text-white mt-3 tracking-tight">
+            <section className="pt-12 pb-16 px-4 sm:px-6 max-w-5xl mx-auto text-center">
+                <span className="text-secondary text-sm font-semibold uppercase tracking-wider">Our Services</span>
+                <h1 className="text-4xl sm:text-5xl font-extrabold text-foreground dark:text-white mt-3 tracking-tight">
                     Precision Surveying Solutions
                 </h1>
-                <p className="text-lg text-[#64748b] max-w-2xl mx-auto mt-6 leading-relaxed">
+                <p className="text-lg text-text-muted max-w-2xl mx-auto mt-6 leading-relaxed">
                     Delivering high-accuracy geospatial data and site engineering services to de-risk your construction and design projects.
                 </p>
             </section>
@@ -159,21 +159,21 @@ export default function ServicesPage() {
             </section>
 
             {/* CTA */}
-            <section className="mx-4 sm:mx-6 lg:mx-auto max-w-5xl mb-24 rounded-3xl bg-gradient-to-r from-[#1e3a5f] to-[#0a1628] p-12 text-center relative overflow-hidden">
+            <section className="mx-4 sm:mx-6 lg:mx-auto max-w-5xl mb-24 rounded-3xl bg-primary p-12 text-center relative overflow-hidden">
                 <div className="absolute inset-0 opacity-5"
                     style={{
-                        backgroundImage: `radial-gradient(circle, #00b4d8 1px, transparent 1px)`,
+                        backgroundImage: `radial-gradient(circle, var(--accent) 1px, transparent 1px)`,
                         backgroundSize: '30px 30px',
                     }}
                 />
                 <div className="relative z-10">
-                    <h2 className="text-3xl font-bold text-white mb-4">Need a bespoke surveying solution?</h2>
-                    <p className="text-[#94a3b8] max-w-lg mx-auto mb-8">
+                    <h2 className="text-3xl font-bold text-on-primary mb-4">Need a bespoke surveying solution?</h2>
+                    <p className="text-on-primary/60 max-w-lg mx-auto mb-8">
                         Our team of experienced surveyors can tailor a package to meet your project&apos;s exact requirements.
                     </p>
                     <Link
                         href="/contact"
-                        className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#00b4d8] to-[#00e5ff] text-[#0a1628] font-bold rounded-full hover:shadow-xl hover:shadow-[#00b4d8]/30 transition-all duration-300 hover:-translate-y-1"
+                        className="inline-flex items-center gap-2 px-8 py-4 bg-secondary text-accent font-bold rounded-full hover:bg-secondary-light hover:shadow-xl hover:shadow-secondary/30 transition-all duration-300 hover:-translate-y-1"
                     >
                         <Mail className="w-4 h-4" /> Request a Quote <ArrowRight className="w-4 h-4" />
                     </Link>

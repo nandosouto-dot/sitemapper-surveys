@@ -46,7 +46,7 @@ export default function Navbar() {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                    ? 'bg-white/95 dark:bg-[#0a1628]/95 backdrop-blur-md shadow-lg shadow-black/5'
+                    ? 'bg-white/95 dark:bg-background/95 backdrop-blur-md shadow-lg shadow-black/5'
                     : 'bg-transparent'
                 }`}
         >
@@ -133,7 +133,7 @@ export default function Navbar() {
                         )}
                         <Link
                             href="/contact"
-                            className="ml-4 px-6 py-2.5 bg-gradient-to-r from-[#1e3a5f] to-[#2d5a8e] text-white text-sm font-semibold rounded-full hover:shadow-lg hover:shadow-[#1e3a5f]/25 transition-all duration-300 hover:-translate-y-0.5"
+                            className="ml-4 px-6 py-2.5 bg-secondary text-accent text-sm font-semibold rounded-full hover:bg-secondary-light hover:shadow-lg hover:shadow-secondary/25 transition-all duration-300 hover:-translate-y-0.5"
                         >
                             Request a Quote
                         </Link>
@@ -168,7 +168,7 @@ export default function Navbar() {
                     <Link
                         href="/contact"
                         onClick={() => setIsOpen(false)}
-                        className="block mt-4 px-6 py-3 bg-gradient-to-r from-[#1e3a5f] to-[#2d5a8e] text-white text-center font-semibold rounded-full"
+                        className="block mt-4 px-6 py-3 bg-secondary text-accent text-center font-semibold rounded-full hover:bg-secondary-light transition-colors"
                     >
                         Request a Quote
                     </Link>

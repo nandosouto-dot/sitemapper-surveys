@@ -145,13 +145,13 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="px-8 py-4 bg-gradient-to-r from-[#00b4d8] to-[#00e5ff] text-[#0a1628] font-bold rounded-full hover:shadow-xl hover:shadow-[#00b4d8]/30 transition-all duration-300 hover:-translate-y-1 flex items-center gap-2"
+              className="px-8 py-4 bg-secondary text-accent font-bold rounded-full hover:bg-secondary-light hover:shadow-xl hover:shadow-secondary/30 transition-all duration-300 hover:-translate-y-1 flex items-center gap-2"
             >
               Request a Quote <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
               href="/services"
-              className="px-8 py-4 border border-white/20 text-white font-semibold rounded-full hover:bg-white/5 transition-all duration-300 backdrop-blur-sm"
+              className="px-8 py-4 bg-secondary text-accent font-semibold rounded-full hover:bg-secondary-light transition-all duration-300"
             >
               Explore Our Services
             </Link>
@@ -292,7 +292,11 @@ export default function HomePage() {
           </p>
           <Link
             href="/contact"
+<<<<<<< HEAD
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#00b4d8] to-[#00e5ff] text-[#0a1628] font-bold rounded-full hover:shadow-xl hover:shadow-[#00b4d8]/30 transition-all duration-300 hover:-translate-y-1"
+=======
+            className="inline-flex items-center gap-2 px-8 py-4 bg-secondary text-accent font-bold rounded-full hover:bg-secondary-light hover:shadow-xl hover:shadow-secondary/30 transition-all duration-300 hover:-translate-y-1"
+>>>>>>> 8233b15 (Fix navbar collision and update CTA button colors)
           >
             Request a Quote <ArrowRight className="w-4 h-4" />
           </Link>

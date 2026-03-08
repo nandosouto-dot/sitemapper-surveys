@@ -87,7 +87,7 @@ export default function Footer() {
                         </p>
                         <Link
                             href="/contact"
-                            className="inline-block px-6 py-3 bg-gradient-to-r from-[#1e3a5f] to-[#00b4d8] text-white font-semibold text-sm rounded-full hover:shadow-lg hover:shadow-[#00b4d8]/20 transition-all duration-300"
+                            className="inline-block px-6 py-3 bg-secondary text-accent font-semibold text-sm rounded-full hover:bg-secondary-light hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300"
                         >
                             Request a Quote
                         </Link>

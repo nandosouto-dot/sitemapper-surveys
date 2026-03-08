@@ -65,12 +65,12 @@ export default function BlogPage() {
     return (
         <div className="grid-overlay">
             {/* Hero */}
-            <section className="pt-32 pb-16 px-4 sm:px-6 max-w-5xl mx-auto text-center">
-                <span className="text-[#00b4d8] text-sm font-semibold uppercase tracking-wider">Blog</span>
-                <h1 className="text-4xl sm:text-5xl font-extrabold text-[#0a1628] dark:text-white mt-3 tracking-tight">
+            <section className="pt-12 pb-16 px-4 sm:px-6 max-w-5xl mx-auto text-center">
+                <span className="text-secondary text-sm font-semibold uppercase tracking-wider">Blog</span>
+                <h1 className="text-4xl sm:text-5xl font-extrabold text-foreground dark:text-white mt-3 tracking-tight">
                     Insights & Expertise
                 </h1>
-                <p className="text-lg text-[#64748b] max-w-2xl mx-auto mt-6 leading-relaxed">
+                <p className="text-lg text-text-muted max-w-2xl mx-auto mt-6 leading-relaxed">
                     Technical guides, industry insights, and case studies from our team of experienced surveyors.
                 </p>
             </section>
@@ -81,34 +81,34 @@ export default function BlogPage() {
                     {blogPosts.map((post) => (
                         <article
                             key={post.id}
-                            className="group rounded-2xl border border-[#e2e8f0] dark:border-[#1e3550] bg-white dark:bg-[#111d32] overflow-hidden hover:border-[#00b4d8]/50 hover:shadow-xl hover:shadow-[#00b4d8]/5 transition-all duration-300"
+                            className="group rounded-2xl border border-border dark:border-border bg-white dark:bg-surface overflow-hidden hover:border-secondary/50 hover:shadow-xl hover:shadow-secondary/5 transition-all duration-300"
                         >
                             {/* Category Banner */}
-                            <div className="h-48 bg-gradient-to-br from-[#1e3a5f] to-[#111d32] flex items-center justify-center relative overflow-hidden">
+                            <div className="h-48 bg-primary flex items-center justify-center relative overflow-hidden">
                                 <div className="absolute inset-0 opacity-10"
                                     style={{
-                                        backgroundImage: `linear-gradient(rgba(0,180,216,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(0,180,216,0.4) 1px, transparent 1px)`,
+                                        backgroundImage: `linear-gradient(rgba(6,78,59,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(6,78,59,0.4) 1px, transparent 1px)`,
                                         backgroundSize: '30px 30px',
                                     }}
                                 />
-                                <span className="relative z-10 px-4 py-2 bg-[#00b4d8]/20 text-[#00b4d8] text-sm font-semibold rounded-full border border-[#00b4d8]/30">
+                                <span className="relative z-10 px-4 py-2 bg-secondary/20 text-secondary text-sm font-semibold rounded-full border border-secondary/30">
                                     {post.category}
                                 </span>
                             </div>
 
                             {/* Content */}
                             <div className="p-6">
-                                <h2 className="text-lg font-bold text-[#0a1628] dark:text-white group-hover:text-[#1e3a5f] dark:group-hover:text-[#00b4d8] transition-colors leading-snug mb-3">
+                                <h2 className="text-lg font-bold text-foreground dark:text-white group-hover:text-primary dark:group-hover:text-secondary transition-colors leading-snug mb-3">
                                     {post.title}
                                 </h2>
-                                <p className="text-[#64748b] text-sm leading-relaxed mb-4">
+                                <p className="text-text-muted text-sm leading-relaxed mb-4">
                                     {post.excerpt}
                                 </p>
-                                <div className="flex items-center gap-4 text-xs text-[#94a3b8] mb-4">
+                                <div className="flex items-center gap-4 text-xs text-text-light mb-4">
                                     <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> {post.date}</span>
                                     <span className="flex items-center gap-1"><Clock className="w-3 h-3" /> {post.readTime}</span>
                                 </div>
-                                <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#1e3a5f] dark:text-[#00b4d8] group-hover:gap-2 transition-all cursor-pointer">
+                                <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary dark:text-secondary group-hover:gap-2 transition-all cursor-pointer">
                                     Read Article <ArrowRight className="w-3 h-3" />
                                 </span>
                             </div>
